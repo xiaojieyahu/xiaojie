@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/xiaojieen/myphto1/img/202202091713021.png"/>
+  <title>小杰爆肝的博客纯手写</title>
+
+  <style>
+    .bei {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      position: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 50%;
+
+      background-image: url(https://cdn.jsdelivr.net/gh/xiaojieen/myphto1/img/202202091336120.jpg);
+    }
+
+    .zong {
+      width: 220px;
+      margin-top: 100px;
+      margin-left: 100px;
+      float: left;
+      /* border: #f00 solid 2px; */
+      
+    }
+
+    .logo img {
+      border-radius: 15px;
+      max-width: 220px;
+      padding-bottom: 10px;
+      width: 95%;
+    }
+
+    .ming {
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      padding-bottom: 2px;
+    }
+    a:link,a:visited{
+        color:#674488;}
+        a{ text-decoration:none} 
+    .ming2 {
+      font-size: 15px;
+      text-align: center;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .ju {
+      font-size: 13px;
+      color: white;
+      text-align: center;
+      padding-bottom: 2px;
+    }
+
+    #riji {
+      border-radius: 10px;
+      background: #e0c3fc;
+      padding: 20px;
+      text-align: center;
+      height: 10px;
+    }
+
+    .ju1 {
+      font-size: 20px;
+      color: #8ec5fc;
+      text-align: center;
+    }
+
+    .button {
+      border: #f3e7e9;
+      text-decoration: #8ec5fc;
+
+      display: inline-block;
+      font-size: 16px;
+
+      width: 190px;
+
+      border-radius: 10px;
+      margin-top: 15px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: #f3e7e9;
+      color: black;
+      padding: 15px;
+    }
+
+    .button1:hover {
+      background-color: #8ec5fc;
+
+      padding: 15px;
+    }
+
+    .parent {
+      display: flex;
+      flex-flow: column;
+      height: 100vh;
+    }
+
+    .guan {
+      background-color: #9c9c9c6e;
+  
+      margin-top: 100px;
+      padding-left: 20px;
+      border-radius: 15px;
+      padding-top: 20px;
+      margin-left: 400px;
+      top: 0;
+      
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      margin-right: 50px;
+      margin-bottom: 50px;
+      position: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 50%
+    }
+
+    .ju2 {
+      font-size: 16px;
+      color: #ffff;
+
+    }
+
+    .ju3 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      font-size: 20px;
+      
+
+    }
+
+
+    .container {
+      width: 100%;
+      max-width: 20%;
+      height: 7px;
+      border-radius: 30px;
+      margin: 0 50px 50px;
+      background-color: rgba(153, 153, 153, 0.795);
+    }
+
+    .skills {
+      text-align: right;
+      padding-right: 10px;
+      line-height: 40px;
+      color: white;
+    }
+
+    .html {
+      width: 3%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+  
+    .htm2 {
+      width: 80%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm3 {
+      width: 25%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm4 {
+      width: 30%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+    }
+      .htm5 {
+      width: 75%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm6 {
+      width: 60%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm7 {
+      width: 65%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm8 {
+      width: 60%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+    .htm9 {
+      width: 85%;
+      height: 7px;
+      border-radius: 30px;
+      background-color: #505050;
+
+    }
+
+
+
+    div {
+      position: relative;
+  }
+  div:hover::after {
+      content: attr(data-title);
+      background: #505050;
+      color: #fffefe;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-right-radius: 0.5pc;
+      border-top-left-radius: 0.5pc;
+      left: 35%;
+      font-size: 15px;
+      position: absolute;
+      bottom:7px;}
+      .ju5 {
+        font-size: 20px;
+       padding-left: 5px;
+        color: rgb(255, 255, 255);
+  
+      }
+    
+      .ju6 {
+        font-size: 23px;
+   width: 100%;
+   height: 10px;
+   text-align: left;
+       color: rgb(238, 0, 0);
+  
+      }
+      .zuo {
+      background-color: #5050509a;
+      height: 100px;
+      border-radius: 15px;
+
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 20px;
+      width: 100%;
+ 
+    }
+    .ju31 {
+      font-size: 16px;
+      color: #ffff;
+
+
+    }
+    .ju30 {
+      font-size: 22px;
+      line-height:30px;
+      color: #ffff;
+      margin-top: 10px;
+      margin-left: 20px;
+      text-align:left ;
+     
+    }
+
+   
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.aside-menu::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+.box{
+    overflow:-Scroll;
+    overflow-y:hidden;
+}
+ 
+
+  </style>
+</head>
+
+<body class="bei">
+  <div class="zong">
+    <p class="logo img"><img src="assets/img/logo.jpg" title="你的网络这么差的吗？" /> </p>
+    <p class="ming">小&nbsp;杰&nbsp;啊</p>
+    <p class="ming2">xiaojieen</p>
+    <p class="ju">「人山人海，别辜负相遇」</p>
+    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="https://github.com/xiaojieen" target="_blank">
+      <div class="button button1 ju1">日记</div>
+    </a>
+    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="https://github.com/xiaojieen" target="_blank">
+      <div class="ju1 button button1">我的GitHub</div>
+
+    </a>
+    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="https://github.com/xiaojieen" target="_blank">
+      <div class="ju1 button button1">留言板</div>
+    </a>
+    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="https://github.com/xiaojieen" target="_blank">
+      <div class="ju1 button button1">关于我</div>
+    </a>
+  </div>
+  <div class="guan" style="overflow-y:auto">
+    <p class="ju2">你好，这里是小杰，普通的傻子一枚~<br>
+      坐标河南省驻马店，对信息技术以及安卓开发感兴趣。<br>
+      咱有很多昵称：小杰，扑捉一只小杰<br>
+      更多关于咱的信息请<a href="https://github.com/xiaojieen" target="_blank">点击这里</a>。<br>
+      How lucky to meet you!<br>
+      <p class="ju6">#战斗力：</p><br>
+    </p>
+   
+    <div class="ju3">
+       
+      <div class="container"data-title="代码写的和诗一样">
+        <div class="skills html"></div>
+        <div class="ju5">html</div>
+      </div>
+      <div class="container"data-title="逻辑大师">
+        <div class="skills htm2"></div>
+        <div class="ju5">安卓前端</div>
+      </div>
+      <div class="container"data-title="现学现卖：我真的太菜了">
+        <div class="skills htm3"></div>
+        <div class="ju5">JAVA</div>
+      </div>
+      <div class="container"data-title="让事情发生的能力">
+        <div class="skills htm4"></div>
+        <div class="ju5">搞事情</div>
+      </div>
+         <div class="container"data-title="社交能力(社恐）">
+        <div class="skills htm5"></div>
+        <div class="ju5">社交</div>
+      </div>
+      <div class="container"data-title="对他人的情感深度">
+        <div class="skills htm6"></div>
+        <div class="ju5">情感</div>
+      </div>
+      <div class="container"data-title="爱到脊椎炎">
+        <div class="skills htm7"></div>
+        <div class="ju5">对代码的热爱</div>
+      </div>
+      <div class="container"data-title="沙雕一个">
+        <div class="skills htm8"></div>
+        <div class="ju5">逗比</div>
+      </div>
+      <div class="container"data-title="热爱自由的程度">
+        <div class="skills htm9"></div>
+        <div class="ju5">自由</div>
+      
+      </div>
+      <p class="ju6" >最新作品：</p>
+      <div class="zuo" style="height:100px;overflow-y:auto">
+        <div class="ju30 ">小杰博客破壳日: PS:鼠标停留窗口可以向下滑动
+          <div class="ju31">这个博客诞生于2022年2月15号，也是从这一天开始学习的html和css，代码写的个人感觉和诗一样，为啥这么高的评价，因为我是专业学习安卓开发的，安卓前端，差不多逻辑性了，而这个博客写的一点逻辑都没有,UI也没有做好! <br> <br>小杰 </div>
+        </div>
+          <a href="#" class="zuo1"target="_blank">
+           </a>
+          </div>
+          <div class="zuo" style="height:100px;overflow-y:auto">
+            <div class="ju30 ">往事经历在金力有限公司工作:
+              <div class="ju31">第一次工作，负责对接客户，视察车间，统计问题，出解决报告，去外发厂视察，制作电池（高温/低温下）放电图<br>优点：工作轻松，待遇很好有公积金，八小时制度双休<br>缺点：工资低，工作内容没有提升空间</div>
+            </div>
+              <a href="#" class="zuo1"target="_blank">
+               </a>
+              </div>
+              <div class="zuo" style="height:100px;overflow-y:auto">
+                <div class="ju30 ">在联想公司旗下兴奇宏有限公司工作经历:
+                  <div class="ju31">这是第二次工作，主要负责电脑系统测试，bios问题处理，系统bug提交，案子分发<br>优点：工作轻松，八小时制度双休<br>缺点：工资及低，没有公积金，工作内容没有提升空间<br>心得：在里面工作我不敢说：他们离开我，就不能转了，但是我敢说：我在哪里工作的时候的确方便，帮助负责人处理系统上问题以及经常讨论 </div>
+                </div>
+                  <a href="#" class="zuo1"target="_blank">
+                   </a>
+                  </div>
+      </div>
+    
+</body>
+<html>
